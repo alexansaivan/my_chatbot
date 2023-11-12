@@ -6,7 +6,7 @@
 
 ## Domain
 
-The chosen domain for **dialogov** focuses on addressing common user needs related to official government procedures. Users can seek assistance in areas such as authorizations for specific actions, obtaining birth certificates, checking the validity of documents, and more. The chatbot ensures transparency and credibility by sourcing information directly from the official Greek government page in Englih [https://www.gov.gr/en/](https://www.gov.gr/en/).
+The chosen domain for **dialogov** focuses on addressing common user needs related to official government procedures. Users can seek assistance in areas such as authorizations for specific actions, obtaining birth certificates, checking the validity of documents, and more. The chatbot ensures transparency and credibility by sourcing information directly from the official Greek government page in English [https://www.gov.gr/en/](https://www.gov.gr/en/).
 
 ## Intention
 
