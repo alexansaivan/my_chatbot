@@ -1,0 +1,97 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      good morning
+    intent: greet
+  - action: utter_greet
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_affirm
+  - user: |
+      Please guide me on how to authorize someone else to act on my behalf.
+    intent: provide_authorization
+  - action: utter_authorization_info
+  - user: |
+      thanks bro
+    intent: thanks
+  - action: utter_thanks
+  - user: |
+      bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      sure
+    intent: affirm
+  - action: utter_affirm
+  - user: |
+      please issue a birth certificate for me
+    intent: issue_birth_certificate
+  - action: utter_birth_certificate
+  - user: |
+      thank you for that
+    intent: thanks
+  - action: utter_want_sth_else
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_affirm
+  - user: |
+      how to see if my documents are valid
+    intent: check_document_validity
+  - action: utter_check_document_validity
+  - user: |
+      thank you for your help
+    intent: thanks
+  - action: utter_thanks
+  - user: |
+      goodbye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path
+  steps:
+  - user: |
+      hi there
+    intent: greet
+  - action: utter_greet
+  - user: |
+      absolutely
+    intent: affirm
+  - action: utter_affirm
+  - user: |
+      how to issue a vaccination certificate
+    intent: get_vaccination_info
+  - action: utter_vaccination_info
+  - action: utter_did_that_help
+  - user: |
+      not really
+    intent: deny
+  - action: utter_want_sth_else
+  - user: |
+      when to get vaccinated
+    intent: get_vaccination_info
+  - action: utter_deny
+  - user: |
+      k bye
+    intent: goodbye
+  - action: utter_goodbye
+
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
