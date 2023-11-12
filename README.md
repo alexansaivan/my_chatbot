@@ -2,11 +2,11 @@
 
 ## Overview
 
-**Dialogov chatbot** is an interactive assistant designed designed to assist users with issues related to official government processes. It focuses on providing information and guidance in areas such as authorizations, document validity checks, and general inquiries, all sourced from the official government page [here](https://www.gov.gr/). The chatbot is built using Rasa, incorporating natural language understanding to simplify user interactions.
+**Dialogov chatbot** is an interactive assistant designed designed to assist users with issues related to official government processes. It focuses on providing information and guidance in areas such as authorizations, document validity checks, and general inquiries, all sourced from the [official Greek government page](https://www.gov.gr/en/) in English. The chatbot is built using Rasa, incorporating natural language understanding to simplify user interactions.
 
 ## Domain
 
-The chosen domain for **dialogov** focuses on addressing common user needs related to official government procedures. Users can seek assistance in areas such as authorizations for specific actions, obtaining birth certificates, checking the validity of documents, and more. The chatbot ensures transparency and credibility by sourcing information directly from the official government page [https://www.gov.gr/](https://www.gov.gr/).
+The chosen domain for **dialogov** focuses on addressing common user needs related to official government procedures. Users can seek assistance in areas such as authorizations for specific actions, obtaining birth certificates, checking the validity of documents, and more. The chatbot ensures transparency and credibility by sourcing information directly from the official Greek government page in Englih [https://www.gov.gr/en/](https://www.gov.gr/en/).
 
 ## Intention
 
